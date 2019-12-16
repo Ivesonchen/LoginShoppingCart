@@ -22,36 +22,35 @@
 	
 	<input rel="currentUserId" style="display:none" value="<%=id %>"/>
 	
-	<div class="container">
-		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-8 header">
+	<div class="container-fluid full">
+		<div class="row title">
+			<div class="col-8 offset-2 header">
 				<span>Grocery Store</span>
 			</div>
 		</div>
 
 		<div class="main row">
 			<div class="cart col-5">
-				<h1>Shopping Cart:</h1>
-				<div class="disp blue_border"></div>
+				<span class="cart_title">Shopping Cart:</span>
+				<div class="disp"></div>
 			</div>
 
-			<div class="storageList col-7 green_border">
-				<h1>Item List</h1>
+			<div class="storageList col-7">
+				<span class="store_title">Item List</span>
 				<jsp:useBean id="service"
 					class="org.ivesonchen.services.ShoppingCartServices"></jsp:useBean>
 				<%List<Item> list = service.getAllItems();%>
 
 				<%for (Item ele : list) {%>
-				<div class="item blue_border">
-					<div class="image red_border">
+				<div class="item">
+					<div class="image">
 						<img src="./images/<%=ele.getImageUrl()%>" /> <input type="text"
 							value="<%=ele.getImageUrl()%>" style="display: none"
 							rel="item_url" />
 
 					</div>
 
-					<div class="word red_border">
+					<div class="word">
 						<div class="name"><%=ele.getName()%></div>
 						<input type="text" value="<%=ele.getName()%>"
 							style="display: none" rel="item_name" />
@@ -61,7 +60,7 @@
 
 					</div>
 
-					<div class="operation green_border" rel="addToCart">
+					<div class="operation" rel="addToCart">
 						add <input type="text" value="<%=ele.getId()%>"
 							style="display: none" rel="item_id" />
 					</div>

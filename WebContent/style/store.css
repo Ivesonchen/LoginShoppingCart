@@ -1,12 +1,30 @@
 @import url ("./bootstrap.min.css");
 
-
-
-.header{
-	text-align: center;
-	text-decoration: underline;
+.full{
+	height:100vh;
+	background-color: #F6F6F6;
 }
 
+.title{
+	height: 5em;
+	text-align: center;
+	padding:1em;
+	background-color: #96B97C;
+	color:white;
+	letter-spacing: 3px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.main{
+	height:50em;
+	padding:0.2em 3em;
+}
+
+.cart_title, .store_title{
+	font-size: 1em;
+	font-weight: bold;
+}
 
 .item{
 	height: 5em;
@@ -14,6 +32,15 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+}
+
+.item:hover{
+	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
 }
 
 .item .image{
@@ -25,17 +52,30 @@
 .item .word{
 	height: 4em;
 	width: 80%;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
 }
 
 .item .operation{
+	margin-left:0.5em;
+	border-radius:0.3em;
+	cursor: pointer;
 	width: 2em;
 	height: 2em;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
 }
 
-
-.main{
-	height:60em;
+.item .operation:hover{
+	width: 2em;
+	height: 2em;
+	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
 }
+
 
 .cart{
 	padding: 1em;
@@ -49,6 +89,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
 }
 
 .itemInCart{
@@ -66,7 +109,11 @@
 .itemInCart .qty{
 	height: 3em;
 	width: 3em;
-	border: 1px solid blue;
+	text-align: center;
+	border-radius:1em;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
 }
 
 .itemInCart .control{
@@ -77,22 +124,54 @@
 }
 
 .itemInCart .control .plusOne, .minusOne{
-	border: 1px solid red;
+	cursor:pointer;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	
+}
+
+.itemInCart .control .plusOne:hover, .minusOne:hover{
+	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	
 }
 
 .itemInCart .del{
+	cursor:pointer;
 	height: 3em;
 	width: 3em;
-	border: 1px solid blue;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
 }
+.itemInCart .del:hover{
+	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+
+}
+
 .itemInCart .move{
+	cursor:pointer;
 	height: 3em;
 	width: 3em;
-	border: 1px solid blue;
+		-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+}
+.itemInCart .move:hover{
+	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
 }
 
 .storageList{
 	padding: 1em;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
 }
 
 .red_border{

@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="./style/regist.css">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid full">
 		<div class="title row">
 			<div class="col-2"></div>
 			<div class="col-8 header">
@@ -22,7 +22,7 @@
 		</div>
 
 		<div class="main row">
-			<div class="login col-8 blue_border">
+			<div class="login col-8">
 				<span>Enter your info here</span>
 				<form action="RegistServlet" method="post">
 					<div class="form-group">
@@ -41,11 +41,11 @@
 							placeholder="Enter your password">
 					</div>
 					
-					<button class="btn btn-primary" type="submit">Submit</button>
+					<button class="btn btn-outline-primary" type="submit">Submit</button>
 				</form>
 			</div>
 
-			<div class="more col-4 green_border"></div>
+			<div class="more col-4"></div>
 
 		</div>
 

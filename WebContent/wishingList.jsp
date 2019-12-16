@@ -24,25 +24,25 @@
 		Map<Item, Integer> map = service.getWishListItem(userId);
 	%>
 
-	<div class="container">
+	<div class="container-fluid full">
 
 		<div class="title row">
 			<div class="col-2"></div>
 			<div class="col-8 header">
-				<span>Your wishing list: </span>
+				<span>Your wishing list</span>
 			</div>
 		</div>
 
 		<div class="row">
 
-			<div class="list col-8 offset-2 red_border">
+			<div class="list col-8 offset-2">
 				<% for(Map.Entry<Item, Integer> entry : map.entrySet()){%>
 				<% Item item = entry.getKey();
 				   Integer number = entry.getValue();
 				%>
 
-				<div class="item blue_border">
-					<div class="image red_border">
+				<div class="item">
+					<div class="image">
 						<img src="./images/<%=item.getImageUrl()%>" /> 
 						<input type="text" value="<%=item.getImageUrl()%>" style="display: none"
 							rel="item_url" />
@@ -50,7 +50,7 @@
 							rel="item_id" />
 					</div>
 
-					<div class="word red_border">
+					<div class="word">
 						<div class="name"><%=item.getName()%></div>
 						<input type="text" value="<%=item.getName()%>"
 							style="display: none" rel="item_name" />
@@ -69,8 +69,8 @@
 
 		</div>
 		
-		<div class="row">
-			<a href="store.jsp" class="btn btn-outline-primary" rel="back">Go back to store</a>
+		<div class="row back">
+			<a href="store.jsp" class="btn btn-outline-primary col-2 offset-2" rel="back">Go back to store</a>
 		</div>
 		
 		

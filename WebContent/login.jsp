@@ -13,17 +13,16 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="container-fluid full">
 		<div class="title row">
-			<div class="col-2"></div>
-			<div class="col-8 header">
+			
+			<div class="col-8 offset-2 header">
 				<span>Login</span>
 			</div>
 		</div>
 
 		<div class="main row">
-			<div class="login col-8 blue_border">
-				<span>Login Here</span>
+			<div class="login col-8">
 				<form action="LoginServlet" method="post">
 					<div class="form-group">
 						<label for="firstName">First Name: </label> <input type="text"
@@ -41,12 +40,12 @@
 							placeholder="Enter your password">
 					</div>
 					
-					<button class="btn btn-primary" type="submit">Submit</button>
+					<button class="btn btn-outline-primary" type="submit">Submit</button>
 					<a href ="regist.jsp">Not a member? Regist here.</a>
 				</form>
 			</div>
 
-			<div class="info col-4 green_border">
+			<div class="info col-4">
 				${message}
 			</div>
 				

@@ -1,10 +1,58 @@
-.header{
-	height:5em;
-	padding:1em;
-	text-align: center;
+.full{
+	height:100vh;
+	background-color: #F6F6F6;
 }
 
+.header{
+	height: 5em;
+	text-align: center;
+	padding:1em;
+	background-color: #96B97C;
+	color:white;
+	letter-spacing: 3px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.container{
+	background-color: #F0F8FF;
+}
+
+ a, a:hover, a:focus, a:active {
+     text-decoration: none;
+     color: inherit;
+ }
+
 .title{
-	text-decoration: underline;
 	size: 2em;
+}
+
+.option1, .option2{
+	display:block;
+	height: 3em;
+	width: 10em;
+	margin: 3em auto;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.56);
+}
+
+.option1:hover, .option2:hover{
+	-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.56);
+}
+
+
+.red_border{
+	border: 1px solid red;
+}
+
+.green_border{
+	border: 1px solid green;
+}
+
+.blue_border{
+	border: 1px solid blue;
 }
