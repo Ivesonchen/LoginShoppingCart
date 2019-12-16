@@ -1,0 +1,108 @@
+@import url ("./bootstrap.min.css");
+
+
+
+.header{
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+.item{
+	height: 5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.item .image{
+	width:3em;
+	height:3em;
+	
+}
+
+.item .word{
+	height: 4em;
+	width: 80%;
+}
+
+.item .operation{
+	width: 2em;
+	height: 2em;
+}
+
+
+.main{
+	height:60em;
+}
+
+.cart{
+	padding: 1em;
+}
+
+
+.cart .disp{
+	height: 90%;
+	width: 100%;
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.itemInCart{
+	height:4em;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.itemInCart .image{
+	height: 3em;
+	width: 3em;
+}
+
+.itemInCart .qty{
+	height: 3em;
+	width: 3em;
+	border: 1px solid blue;
+}
+
+.itemInCart .control{
+	height: 3em;
+	width: 3em;
+	diplay:flex;
+	flex-direction: column;
+}
+
+.itemInCart .control .plusOne, .minusOne{
+	border: 1px solid red;
+}
+
+.itemInCart .del{
+	height: 3em;
+	width: 3em;
+	border: 1px solid blue;
+}
+.itemInCart .move{
+	height: 3em;
+	width: 3em;
+	border: 1px solid blue;
+}
+
+.storageList{
+	padding: 1em;
+}
+
+.red_border{
+	border: 1px solid red;
+}
+
+.green_border{
+	border: 1px solid green;
+}
+
+.blue_border{
+	border: 1px solid blue;
+}

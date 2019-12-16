@@ -1,0 +1,26 @@
+.title{
+	height: 5em;
+	text-align: center;
+	padding:1em;
+}
+
+.main{
+	height:30em;
+}
+
+.login{
+	
+	
+}
+
+.red_border{
+	border: 1px solid red;
+}
+
+.green_border{
+	border: 1px solid green;
+}
+
+.blue_border{
+	border: 1px solid blue;
+}
